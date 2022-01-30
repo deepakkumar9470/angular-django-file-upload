@@ -1,0 +1,23 @@
+
+
+
+<h1>Django & Angular FileUpload</h1>
+
+
+
+<div class="container">
+
+     <label for="title"> Title : </label>
+     <input type="text" name="title" (change)="onTitleChanged($event)">
+
+     <br>
+     <br>
+
+     <label for="cover">Photo :</label>
+     <input type="file" name="file" (change)="uploadile($event)">
+
+     <br>
+     <br>
+
+     <button type="button" (click)='newCover()'>Upload</button>
+</div>
